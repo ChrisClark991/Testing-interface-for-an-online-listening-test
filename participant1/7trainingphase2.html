@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-image: url('background2.png');
+	  background-repeat: no-repeat;
+    }
+	.shapedefine {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: transparent;
+		 }
+    .pos0 {
+      top: 148px;
+      left: 503px;
+    }
+    .headdefine {
+      top: 559px;
+      left: 503px;
+      background-image: none;
+      background-color: transparent;
+	}
+	.pospos20 {
+	left: 644px;
+	top: 173px;
+	}
+	.pospos45 {
+		top: 269px;
+		left: 793px;
+	}
+	.pospos65{
+	left: 875px;
+	top: 385px;
+	}
+	.pospos90 {
+	left: 914px;
+	top: 559px;
+	}
+	.continuebutton {
+	left: 200px;
+	top: 313px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 36px solid transparent;
+	border-left: 72px solid #009933;
+	border-bottom: 36px solid transparent;
+	}
+	
+	.correcttext {
+	position: absolute;
+	left: 200px;
+	top: 500px;
+	font-size: 40px;
+	color: transparent;
+	}
+	
+	.incorrecttext {
+	position: absolute;
+	font-size: 40px;
+	left: 200px;
+	top: 500px;
+	color: transparent ;
+	}
+
+	.yourguess {
+	position: absolute;
+	font-size: 40px;
+	left: 200px;
+	top: 600px;
+	color: transparent ;
+	}
+	
+	.correctguesss{
+	position: absolute;
+	font-size: 40px;
+	left: 200px;
+	top: 600px;
+	color: transparent;
+	}
+	
+	.timeText {
+	color: rgb(246, 4, 4);
+	font-size: 48px;
+	}
+	.ErrorClass {
+	position: absolute;
+	color: rgb(246, 4, 4);
+	font-size: 40px;
+	top: 550px;
+	left: 200px;
+	}
+	
+	<!--.triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 36px solid transparent;
+	border-left: 413px solid #555;
+	border-bottom: 36px solid transparent;
+
+	left: 112px;
+    top: 543px;
+    
+}-->
+  </style>
+</head>
+
+<body class="htmlNoPages">
+
+	<audio id="0aud" src="0deg.wav"></audio> 
+	<audio id="10aud" src="10deg.wav"></audio> 
+	<audio id="20aud" src="20deg.wav"></audio> 
+	<audio id="30aud" src="30deg.wav"></audio> 
+	<audio id="40aud" src="40deg.wav"></audio> 
+	<audio id="50aud" src="50deg.wav"></audio> 
+	<audio id="60aud" src="60deg.wav"></audio> 
+	<audio id="70aud" src="70deg.wav"></audio> 
+	<audio id="80aud" src="80deg.wav"></audio> 
+	<audio id="90aud" src="90deg.wav"></audio> 	
+	<audio id="45aud" src="45deg.wav"></audio>
+	<audio id="65aud" src="65deg.wav"></audio>
+
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound0() {
+	document.getElementById('0aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound10() {
+	document.getElementById('10aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound20() {
+	document.getElementById('20aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound30() {
+	document.getElementById('30aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound40() {
+	document.getElementById('40aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound50() {
+	document.getElementById('50aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound60() {
+	document.getElementById('60aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound70() {
+	document.getElementById('70aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound80() {
+	document.getElementById('80aud').play(); 
+
+	}
+	</script>
+
+	<script> <!-- Script function plays sound -->
+	
+	function playSound90() {
+	document.getElementById('90aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound45() {
+	document.getElementById('45aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound65() {
+	document.getElementById('65aud').play(); 
+
+	}
+	</script>
+	
+	<script>
+		function getRndInteger(min, max) {
+	  return Math.floor(Math.random() * (max - min + 1) ) + min;
+	}
+	</script>	
+
+	<script> <!-- Logs location co-ordinates of mouseclick -->
+	
+	function audiostop(){
+		const aud0 = document.getElementById("0aud");
+		const aud20 = document.getElementById("20aud");
+		const aud45 = document.getElementById("45aud");
+		const aud65 = document.getElementById("65aud");
+		const aud90 = document.getElementById("90aud");
+		
+		aud0.pause();
+		aud0.currentTime = 0;
+		
+		aud20.pause();
+		aud20.currentTime = 0;
+	
+		aud45.pause();
+		aud45.currentTime = 0;
+		
+		aud65.pause();
+		aud65.currentTime = 0;
+		
+		aud90.pause();
+		aud90.currentTime = 0;	
+	}
+	
+	var d = new Date();
+	var time1 = d.getTime();
+	
+	const ARRAY_LENGTH = 3
+	const randomArray = []
+	for(let i = 0; i<ARRAY_LENGTH; i++) {randomArray.push(getRndInteger(1,5))}
+	
+	var totalactions = [];
+	var n = randomArray ;<!-- Psuedorandomly generated numbers to determine sound-->
+	var headposx = 523; <!-- head div position +20 to each co-ordinate to mark the centre-->
+	var headposy = 579;
+	
+	var successCondition = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+	
+	function testing(){
+	
+		
+		
+		var buttontransparent = document.getElementById("continuebutton");
+		var incorrectToggle = document.getElementById("IncorrectText");
+		var correctToggle = document.getElementById("CorrectText");
+		var yourGuess = document.getElementById("YourGuess");
+		var correctGuess = document.getElementById("CorrectGuess");
+		
+		var deg0 = document.getElementById("0deg")
+		var deg20 = document.getElementById("20deg")
+		var deg45 = document.getElementById("45deg")
+		var deg65 = document.getElementById("65deg")
+		var deg90 = document.getElementById("90deg")
+		
+		var position = n[0];
+		if (position == 1){
+			playSound0()
+			var targetbutton = document.getElementById("0deg")
+			var tb1 = targetbutton;
+			var targetx = 503;
+			var	targety = 148;
+		} else if (position == 2){
+			playSound20()
+			var targetbutton = document.getElementById("20deg")
+			var tb2 = targetbutton;
+			var targetx = 644;
+			var	targety = 173;
+		} else if (position == 3){
+			playSound45()
+			var targetbutton = document.getElementById("45deg")
+			var tb3 = targetbutton;
+			var targetx = 793;
+			var	targety = 269;
+		} else if (position == 4){
+			playSound65()
+			var targetbutton = document.getElementById("65deg")
+			var tb4 = targetbutton;
+			var targetx = 875;
+			var	targety = 385;
+		} else if (position == 5){
+			playSound90()
+			var targetbutton = document.getElementById("90deg")
+			var tb5 = targetbutton;
+			var targetx = 914;
+			var	targety = 559;
+		} else if (position == 0){
+			}
+		
+		var targetx = targetx + 20;
+		var targety = targety + 20;
+			
+		var targetdiffx = headposx - targetx;
+		var targetdiffy = headposy - targety;
+		var thetatarget = Math.atan(targetdiffx/targetdiffy);
+		console.log("Aim angle", thetatarget);
+			
+		onclick = function(e){console.log("mouse location:", e.clientX, e.clientY);
+		if (e.clientX > 477){
+			audiostop();
+			var guessposx = e.clientX;
+			var guessposy = e.clientY;
+			var diffx = headposx - guessposx;
+			var diffy = headposy - guessposy;
+			var thetaclick = Math.atan(diffx/diffy);
+			console.log("Guess angle", thetaclick);
+				
+			var error = thetaclick - thetatarget;
+			var errordeg = error*(180/(Math.PI));
+			if (guessposy > 579){
+				errordeg = errordeg - 180;
+				}
+			console.log("Error", errordeg);
+			if (10 > errordeg){
+				var condition1 = 1;
+			} else {
+				var condition1 = 0;
+			}
+			if (-10 < errordeg){
+				var condition2 = 1;
+			}else {
+				var condition2 = 0;
+			}
+
+			if (condition1 + condition2 == 2){<!-- Guess is correct -->
+					console.log("YES")
+					buttontransparent.style["border-left"] = "72px solid #009933";
+					correctToggle.style["color"]= "green" ;
+					successCondition.push(1);
+					successCondition.shift();
+					
+				} else{ <!-- Guess is incorrect-->
+				var thetaclick = -thetaclick*(180/(Math.PI));
+					if (guessposy > 579){
+						thetaclick = thetaclick +180;
+					}
+				console.log(thetaclick)
+					if (thetaclick < 5){
+						playSound0()
+					}
+					if (thetaclick >= 5){
+						if (thetaclick < 15){
+							playSound10()
+						}
+					} if (thetaclick >= 15){
+						if (thetaclick < 25){
+							playSound20()
+						}
+					} if (thetaclick >= 25){
+						if (thetaclick < 35){
+							playSound30()
+						}
+					} if (thetaclick >= 35){
+						if (thetaclick < 45){
+							playSound40()
+						}
+					}
+					if (thetaclick >= 45){
+						if (thetaclick < 55){
+							playSound50()
+						}
+					} if (thetaclick >= 55){
+						if (thetaclick < 65){
+							playSound60()
+						}
+					} if (thetaclick >= 65){
+						if (thetaclick < 75){
+							playSound70()
+						}
+					} if (thetaclick >= 75){
+						if (thetaclick < 85){
+							playSound80()
+						}
+					} if (thetaclick >= 85){
+						playSound90()
+						}
+					if (position == 1){
+						setTimeout(function(){playSound0()}, 3200);
+					} else if (position == 2){
+						setTimeout(function(){playSound20()},3200);
+					} else if (position == 3){
+						setTimeout(function(){playSound45()},3200);
+					} else if (position ==4){
+						setTimeout(function(){playSound65()},3200);
+					} else if (position == 5){
+						setTimeout(function(){playSound90()},3200);
+					}
+					document.getElementById("ErrorGuess").innerHTML = "Error: " + Math.abs(Math.round(errordeg)) + " degrees" ;		
+					console.log("NO")
+					setTimeout(function(){buttontransparent.style["border-left"] = "72px solid #009933";},6200);
+	
+					incorrectToggle.style["color"]= "red";
+					ErrorGuess.style["color"] = "red";
+					yourGuess.style["color"]= "red";
+					setTimeout(function(){yourGuess.style["color"]="transparent";}, 3200);
+					setTimeout(function(){correctGuess.style["color"]="red";},3200);
+					successCondition.push(0);
+					successCondition.shift();
+					
+				}
+				
+				
+				
+			
+			} else {
+				var thetaclick = undefined;
+			}
+	
+		}
+	console.log("n", n);
+
+
+
+		
+	console.log("position", position);	
+	buttontransparent.style["border-left"] = "72px solid transparent";
+	
+	deg0.style["background-color"] = "transparent";
+	deg20.style["background-color"] = "transparent";
+	deg45.style["background-color"] = "transparent";
+	deg65.style["background-color"] = "transparent";
+	deg90.style["background-color"] = "transparent";
+	incorrectToggle.style["color"] = "transparent";
+	correctToggle.style["color"] = "transparent";
+	correctGuess.style["color"] = "transparent";
+	ErrorGuess.style["color"] = "transparent";
+	let sum = successCondition.reduce(function (a,b) {
+		return a + b;
+	}, 0);
+	
+	if (sum >= 18){ <!-- Condition for 70% accuracy -->
+		console.log("FINISHED");
+		window.location.href = "8testinginstructions.html";
+		var af = new Date();
+		var time2 = af.getTime();
+		var totalTime = time2 - time1;
+		console.log("Total time", totalTime);
+		localStorage.setItem("results3",totalTime);
+		var results4 = totalactions.length;
+		localStorage.setItem("results4",results4);
+		}
+		else{
+		document.getElementById("demo").innerHTML = (sum/25)*100 + "%  Goal: 70%";
+	
+		}
+	<!-- This seems like a really inefficient method although referencing .buttton gave too much difficulty -->
+	
+
+
+	n.push(getRndInteger(1,5));
+	n.shift();
+	totalactions.push(0);
+  }
+  setTimeout(function(){ window.location.href = "8testinginstructions.html"; }, 1500000);		
+  </script>
+
+  <p id="demo" class="timeText"></p>
+  
+  <p class="correcttext" id = "CorrectText" > Correct </p>
+  <p class ="incorrecttext" id = "IncorrectText"> Incorrect</p>
+  <p class ="yourguess" id = "YourGuess"> Your guess</p>
+  <p id= "CorrectGuess" class = "correctguesss" >Correct location</p>
+  <p id= "ErrorGuess" class = "ErrorClass"></p>
+  
+  <div class="shapedefine headdefine" id="headposition"></div>
+  <div class="shapedefine pos0" id="0deg"></div>
+
+  <div class="shapedefine pospos20" id="20deg"></div>
+
+  <div class="shapedefine pospos45" id="45deg"></div>
+
+  <div class="shapedefine pospos65" id="65deg"></div>
+
+  <div class="shapedefine pospos90" id = "90deg"></div>
+  <div class="continuebutton" id = "continuebutton" onclick="testing()"></div>
+  
+
+  
+
+  
+ <!-- <div class="triangle" id = "arc1" onclick="playSound90()"></div> --> 
+
+</body>
+
+</html>

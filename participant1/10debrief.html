@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title> Debrief</title>
+</head>
+
+<body>
+	<h1> Testing instructions:</h1>
+	<p id = "testinstructions"> Thank you for participating in this study into HRTF localisation. The final step is to click the button below to submit your results. </p> <br>
+	If you have any further questions or would like to withdraw from this study , the following e-mail can be used as a point of contact to do so: C.Clark8@edu.salford.ac.uk</p>
+	<form action="results2mail.php" method="post">
+
+	<input id="myField" type="hidden" value="" name="totalResults">
+	<script>
+		var partinumber = localStorage.getItem("ParticipantNumber");
+		var results1 = localStorage.getItem("results1");
+		var results2 = localStorage.getItem("results2");
+		var results3 = localStorage.getItem("results3");
+		var results4 = localStorage.getItem("results4");
+		var results5 = localStorage.getItem("results5");
+		var results6 = localStorage.getItem("results6");
+		
+		var totalResults = [];
+		totalResults.push(partinumber);
+		totalResults.push(9999);
+		totalResults.push(results1);
+		totalResults.push(9999);
+		totalResults.push(results2);
+		totalResults.push(9999);
+		totalResults.push(results3);
+		totalResults.push(9999);
+		totalResults.push(results4);
+		totalResults.push(9999);
+		totalResults.push(results5);
+		totalResults.push(9999);
+		totalResults.push(results6);
+		totalResults.push(9999);
+		document.getElementById('myField').value = totalResults;
+		
+	</script>
+
+	<input type="submit" value="Submit"/>
+	
+	</form>
+	<script>
+	function saveResults(){
+		var partinumber = localStorage.getItem("ParticipantNumber");
+		var results1 = localStorage.getItem("results1");
+		var results2 = localStorage.getItem("results2");
+		var results3 = localStorage.getItem("results3");
+		var results4 = localStorage.getItem("results4");
+		var results5 = localStorage.getItem("results5");
+		var results6 = localStorage.getItem("results6");
+		
+		var totalResults = [];
+		totalResults.push(partinumber);
+		totalResults.push(9999);
+		totalResults.push(results1);
+		totalResults.push(9999);
+		totalResults.push(results2);
+		totalResults.push(9999);
+		totalResults.push(results3);
+		totalResults.push(9999);
+		totalResults.push(results4);
+		totalResults.push(9999);
+		totalResults.push(results5);
+		totalResults.push(9999);
+		totalResults.push(results6);
+		totalResults.push(9999);
+		
+		
+		// send data
+		
+		// Build a data URI:
+		  //uri = "data:application/octet-stream," + encodeURIComponent(totalResults);
+
+		// Click on the file to download
+		// You can also do this as a button that has the href pointing to the data URI
+		  //location.href = uri;
+
+	}
+	</script>
+</body>
+</html>

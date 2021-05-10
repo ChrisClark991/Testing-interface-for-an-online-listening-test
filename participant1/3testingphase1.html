@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-image: url('background2.png');
+	  background-repeat: no-repeat;
+    }
+	.shapedefine {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: transparent;
+		 }
+    .pos0 {
+      top: 148px;
+      left: 503px;
+    }
+    .headdefine {
+      top: 559px;
+      left: 503px;
+      background-image: none;
+      background-color: transparent;
+	}
+	.pospos10 {
+	left: 575px;
+	top: 154px;
+	}
+	.pospos20 {
+	left: 644px;
+	top: 173px;
+	}
+	.pospos30 {
+	left:708px;
+	top: 203px;
+	}
+	.pospos40 {
+	left: 767px;
+	top: 244px;
+	}
+	.pospos50 {
+	left: 818px;
+	top: 295px;
+	}
+	.pospos60 {
+	left: 859px;
+	top: 354px;
+	}
+	.pospos70 {
+	left: 889px;
+	top: 419px;
+	}
+	.pospos80 {
+	left: 908px;
+	top: 488px;
+	}
+	.pospos90 {
+	left: 914px;
+	top: 559px;
+	}
+	.pospos20 {
+	left: 644px;
+	top: 173px;
+	}
+	.pospos45 {
+	top: 269px;
+	left: 793px;
+	}
+	.pospos65{
+	left: 875px;
+	top: 385px;
+	}
+	.pospos90 {
+	left: 914px;
+	top: 559px;
+	}
+	.continuebutton {
+	left: 213px;
+	top: 315px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 36px solid transparent;
+	border-left: 72px solid #009933;
+	border-bottom: 36px solid transparent;
+	}
+	
+	<!--.triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 36px solid transparent;
+	border-left: 413px solid #555;
+	border-bottom: 36px solid transparent;
+
+	left: 112px;
+    top: 543px;
+    
+}-->
+  </style>
+</head>
+
+<body class="htmlNoPages">
+	<audio id="0aud" src="0deg.wav"></audio> 
+	<audio id="10aud" src="10deg.wav"></audio> 
+	<audio id="20aud" src="20deg.wav"></audio> 
+	<audio id="30aud" src="30deg.wav"></audio> 
+	<audio id="40aud" src="40deg.wav"></audio> 
+	<audio id="50aud" src="50deg.wav"></audio> 
+	<audio id="60aud" src="60deg.wav"></audio> 
+	<audio id="70aud" src="70deg.wav"></audio> 
+	<audio id="80aud" src="80deg.wav"></audio> 
+	<audio id="90aud" src="90deg.wav"></audio> 	
+	<audio id="45aud" src="45deg.wav"></audio>
+	<audio id="65aud" src="65deg.wav"></audio>
+	
+
+	<script> <!-- Script function plays sound -->
+	
+	function playSound0() {
+	document.getElementById('0aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound10() {
+	document.getElementById('10aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound20() {
+	document.getElementById('20aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound30() {
+	document.getElementById('30aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound40() {
+	document.getElementById('40aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound50() {
+	document.getElementById('50aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound60() {
+	document.getElementById('60aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound70() {
+	document.getElementById('70aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound80() {
+	document.getElementById('80aud').play(); 
+
+	}
+	</script>
+
+	<script> <!-- Script function plays sound -->
+	
+	function playSound90() {
+	document.getElementById('90aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound45() {
+	document.getElementById('45aud').play(); 
+
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound65() {
+	document.getElementById('65aud').play(); 
+
+	}
+	</script>
+	
+	<script>
+		function getRndInteger(min, max) {
+	  return Math.floor(Math.random() * (max - min + 1) ) + min;
+	}
+	</script>
+	
+
+	<script> <!-- Logs location co-ordinates of mouseclick -->
+	
+	
+	
+	var d = new Date();
+	var time1 = d.getTime();
+	
+	var results1 = []; <!-- error results-->
+	var results2 = []; <!-- location results --?>
+	
+	var n = [5,2,4,3,1,8,9,10,7,6,9,7,1,5,2,4,3,6,10,8,5,10,7,4,3,1,8,9,6,2,2,10,4,5,6,9,3,1,8,7,2,7,9,6,3,10,8,5,1,4];<!-- Psuedorandomly generated numbers to determine sound-->
+	n.push(0);
+	var headposx = 523; <!-- head div position +20 to each co-ordinate to mark the centre-->
+	var headposy = 579;
+	
+	function audiostop(){
+		const aud0 = document.getElementById("0aud");
+		const aud10 = document.getElementById("10aud");
+		const aud20 = document.getElementById("20aud");
+		const aud30 = document.getElementById("30aud");
+		const aud40 = document.getElementById("40aud");
+		const aud50 = document.getElementById("50aud");
+		const aud60 = document.getElementById("60aud");
+		const aud70 = document.getElementById("70aud");
+		const aud80 = document.getElementById("80aud");
+		const aud90 = document.getElementById("90aud");
+		
+		aud0.pause();
+		aud0.currentTime = 0;
+		
+		aud10.pause();
+		aud10.currentTime = 0;
+		
+		aud20.pause();
+		aud20.currentTime = 0;
+	
+		aud30.pause();
+		aud30.currentTime = 0;
+		
+		aud40.pause();
+		aud40.currentTime = 0;
+		
+		aud50.pause();
+		aud50.currentTime = 0;
+		
+		aud60.pause();
+		aud60.currentTime = 0;
+		
+		aud70.pause();
+		aud70.currentTime = 0;
+		
+		aud80.pause();
+		aud80.currentTime = 0;
+		
+		aud90.pause();
+		aud90.currentTime = 0;
+		
+	}
+	
+	function testing(){
+	
+		
+		
+		var buttontransparent = document.getElementById("continuebutton");
+		
+		var deg0 = document.getElementById("0deg");
+		var deg10 = document.getElementById("10deg");
+		var deg20 = document.getElementById("20deg");
+		var deg30 = document.getElementById("30deg");
+		var deg40 = document.getElementById("40deg");
+		var deg45 = document.getElementById("45deg");
+		var deg50 = document.getElementById("50deg");
+		var deg60 = document.getElementById("610deg");
+		var deg65 = document.getElementById("65deg");
+		var deg70 = document.getElementById("70deg");
+		var deg80 = document.getElementById("80deg");
+		var deg90 = document.getElementById("90deg");
+		
+		var position = n[0];
+		if (position == 1){
+			
+			playSound0()
+			var targetbutton = document.getElementById("0deg")
+			var tb1 = targetbutton;
+			var targetx = 503;
+			var	targety = 148;
+		} else if (position == 2){
+		
+			playSound10()
+			var targetbutton = document.getElementById("10deg")
+			var tb2 = targetbutton;
+			var targetx = 575;
+			var	targety = 154;
+		} else if (position == 3){
+		
+			playSound20()
+			var targetbutton = document.getElementById("20deg")
+			var tb3 = targetbutton;
+			var targetx = 644;
+			var	targety = 173;
+		} else if (position == 4){
+			
+			playSound30()
+			var targetbutton = document.getElementById("30deg")
+			var tb4 = targetbutton;
+			var targetx = 708;
+			var	targety = 203;
+		} else if (position == 5){
+			
+			playSound40()
+			var targetbutton = document.getElementById("40deg")
+			var tb5 = targetbutton;
+			var targetx = 767;
+			var	targety = 244;
+		} else if (position == 6){
+		
+			playSound50()
+			var targetbutton = document.getElementById("50deg")
+			var tb1 = targetbutton;
+			var targetx = 818;
+			var	targety = 295;
+		} else if (position == 7){
+		
+			playSound60()
+			var targetbutton = document.getElementById("60deg")
+			var tb2 = targetbutton;
+			var targetx = 859;
+			var	targety = 354;
+		} else if (position == 8){
+		
+			playSound70()
+			var targetbutton = document.getElementById("70deg")
+			var tb3 = targetbutton;
+			var targetx = 889;
+			var	targety = 419;
+		} else if (position == 9){
+		
+			playSound80()
+			var targetbutton = document.getElementById("80deg")
+			var tb4 = targetbutton;
+			var targetx = 908;
+			var	targety = 488;
+		} else if (position == 10){
+		
+			playSound90()
+			var targetbutton = document.getElementById("90deg")
+			var tb5 = targetbutton;
+			var targetx = 914;
+			var	targety = 559;
+		} else if (position == 0){
+		
+		
+		localStorage.setItem("results1", results1);
+		localStorage.setItem("results2",results2);
+		setTimeout(function(){window.location.href = "4traininginstructions1.html"; },10)
+			}
+		
+		var targetx = targetx + 20;
+		var targety = targety + 20;
+			
+		var targetdiffx = headposx - targetx;
+		var targetdiffy = headposy - targety;
+		var thetatarget = Math.atan(targetdiffx/targetdiffy);
+		console.log("Aim angle", thetatarget);
+			
+		onclick = function(e){console.log("mouse location:", e.clientX, e.clientY);
+		if (e.clientX > 472){
+			audiostop();
+			var guessposx = e.clientX;
+			var guessposy = e.clientY;
+			var diffx = headposx - guessposx;
+			var diffy = headposy - guessposy;
+			var thetaclick = Math.atan(diffx/diffy);
+			console.log("Guess angle", thetaclick);
+				
+			var error = thetaclick - thetatarget;
+			var errordeg = error*(180/(Math.PI));
+			if (guessposy > 579){
+				errordeg = errordeg - 180;
+				}
+			console.log("Error", errordeg);
+			results1.push(errordeg);
+			results2.push(position);
+			buttontransparent.style["border-left"] = "72px solid #009933";				
+
+				
+			} else {
+				var thetaclick = undefined;
+			}
+	
+		}
+	console.log("n", n);
+
+
+
+		
+	console.log("position", position);	
+	buttontransparent.style["border-left"] = "72px solid transparent";
+	
+	n.shift();
+  }
+  
+  </script>
+
+
+  <div class="shapedefine headdefine" id="headposition"></div>
+  <div class="shapedefine pos0" id="0deg"></div>
+
+  <div class="shapedefine pospos20" id="20deg"></div>
+
+  <div class="shapedefine pospos45" id="45deg"></div>
+
+  <div class="shapedefine pospos65" id="65deg"></div>
+
+  <div class="shapedefine pospos90" id = "90deg"></div>
+  <div class="continuebutton" id = "continuebutton" onclick="testing()"></div>
+ <!-- <div class="triangle" id = "arc1" onclick="playSound90()"></div> --> 
+
+</body>
+
+</html>
+

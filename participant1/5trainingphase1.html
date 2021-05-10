@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-image: url('background2.png');
+	  background-repeat: no-repeat;
+    }
+	.shapedefine {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: rgb(246, 4, 4);
+		 }
+    .pos0 {
+      top: 148px;
+      left: 503px;
+    }
+    .headdefine {
+      top: 559px;
+      left: 503px;
+      background-image: none;
+      background-color: rgb(7, 7, 7);
+	}
+	.pospos20 {
+	left: 644px;
+	top: 173px;
+	}
+	.pospos45 {
+		top: 269px;
+		left: 793px;
+	}
+	.pospos65{
+	left: 875px;
+	top: 385px;
+	}
+	.pospos90 {
+	left: 914px;
+	top: 559px;
+	}
+	
+	.timeText {
+	color: rgb(246, 4, 4);
+	font-size: 48px;
+	}
+  </style>
+</head>
+
+<body class="htmlNoPages">
+	<audio id="0aud" src="0deg.wav"></audio> 
+	<audio id="20aud" src="20deg.wav"></audio> 
+	<audio id="90aud" src="90deg.wav"></audio> 	
+	<audio id="45aud" src="45deg.wav"></audio>
+	<audio id="65aud" src="65deg.wav"></audio>
+
+	<script> <!-- Script function plays sound -->
+	
+	function playSound10() {
+	audiostop();
+	document.getElementById('0aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound11() {
+	
+	document.getElementById('10aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound12() {
+	audiostop();
+	document.getElementById('20aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound13() {
+	document.getElementById('30aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound14() {
+	document.getElementById('40aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound15() {
+	document.getElementById('50aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound16() {
+	document.getElementById('60aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound17() {
+	document.getElementById('70aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound18() {
+	document.getElementById('80aud').play(); 
+	}
+	</script>
+
+	<script> <!-- Script function plays sound -->
+	
+	function playSound19() {
+	audiostop();
+	document.getElementById('90aud').play(); 
+	}
+	</script>
+
+	<script> <!-- Script function plays sound -->
+	
+	function playSound20() {
+	audiostop();
+	document.getElementById('45aud').play(); 
+	}
+	</script>
+	
+	<script> <!-- Script function plays sound -->
+	
+	function playSound21() {
+	audiostop();
+	document.getElementById('65aud').play(); 
+	}
+	</script>
+	
+	
+<!-- Display the countdown timer in an element -->
+<p id="demo" class="timeText"></p>
+
+<script>
+// Set the date we're counting down to
+
+var countDownDate = new Date().getTime() + 300000;
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = minutes + ":" + seconds;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "0:00";
+  }
+}, 1000);
+</script>
+
+
+	<script>
+	
+		function audiostop(){
+		const aud0 = document.getElementById("0aud");
+		const aud20 = document.getElementById("20aud");
+		const aud45 = document.getElementById("45aud");
+		const aud65 = document.getElementById("65aud");
+		const aud90 = document.getElementById("90aud");
+		
+		aud0.pause();
+		aud0.currentTime = 0;
+		
+		aud20.pause();
+		aud20.currentTime = 0;
+	
+		aud45.pause();
+		aud45.currentTime = 0;
+		
+		aud65.pause();
+		aud65.currentTime = 0;
+		
+		aud90.pause();
+		aud90.currentTime = 0;	
+	}
+	</script>
+
+  <div class="shapedefine headdefine" id="headposition"></div>
+
+  <div class="shapedefine pos0" id="0deg" onclick="playSound10()"></div>
+
+  <div class="shapedefine pospos20" id="20deg" onclick="playSound12()"></div>
+
+  <div class="shapedefine pospos45" id="45deg" onclick="playSound20()"></div>
+
+  <div class="shapedefine pospos65" id="65deg" onclick="playSound21()"></div>
+
+  <div class="shapedefine pospos90" id = "90deg" onclick="playSound19()"></div>
+  
+  <script> <!-- Logs location co-ordinates of mouseclick 
+  onclick = function(e){console.log("mouse location:", e.clientX, e.clientY)}
+  setTimeout(function(){ window.location.href = "6traininginstructions2.html"; }, 300000);
+  </script>
+</body>
+
+</html>

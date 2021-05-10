@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title> Participant briefing </title>
+</head>
+
+<body>
+	<h1> Participant information:</h1>
+	<p id="participantinformation">Please read and review the <a
+	href="participantinformation.pdf" target="_blank">participant information sheet</a>
+	prior to continuing.</p>
+	
+	<form>
+		Name:<input type ="text" id="name"/><br/>
+		Participant number*:<input type ="number" id="partinumber"/><br/>
+		
+
+	<input type="button" value="Consent and continue" onclick= "navigated()"/>
+	</form>
+	<script>
+
+	function navigated(){
+		var a = document.getElementById("partinumber").value;
+		localStorage.setItem("ParticipantNumber",a);
+		if (a==1){
+			window.location.href = "participant1/2testinginstructions.html"
+		} else if (a == 2){
+			window.location.href = "participant2/2testinginstructions.html"
+		} else if (a == 3){
+			window.location.href = "participant3/2testinginstructions.html"
+		} else if (a == 4){
+			window.location.href = "participant4/2testinginstructions.html"
+		} else if ( a == 0){
+			window.location.href = "participant0/2testinginstructions.html"
+		}
+	}
+	
+	</script>
+	
+	<script>
+	 if var (serv == 1)
+	 $ php server.php
+	 $ nc -u 127.0.0.1 10000
+	 end
+	 </script>
+		
+</body>
+
+
+
+
+</html>
